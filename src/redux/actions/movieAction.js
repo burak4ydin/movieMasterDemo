@@ -6,6 +6,7 @@ export function getMovies(data) {
     }
 }
 export function getCats(data) {
+
     return {
         type: GET_CATS,
         payload: data

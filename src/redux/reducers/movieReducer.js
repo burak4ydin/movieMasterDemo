@@ -3,30 +3,39 @@ const initialState = {
 
     movies:[],
     categories:[],
-    likes:[]
+    likes:[],
+    loading:true
 };
 const movieReducer = (state = initialState, action) => {
     switch(action.type) {
 
         case GET_MOVIES:
+
             return {
                 ...state,
                 movies:action.payload,
+                loading:false
+
+
             };
         case GET_CATS:
+            // alert(action.payload)
             return {
                 ...state,
-                categories:action.payload
+                categories:action.payload,
+
             };
         case GET_LIKES:
             return {
                 ...state,
-                likes:action.payload
+                likes:action.payload,
+
             };
         case UPDATE_LIKE:
             return {
                 ...state,
-                likes:action.payload
+                likes:action.payload,
+
             };
 
         default:

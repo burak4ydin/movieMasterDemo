@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import Main from "./src/router";
 import configureStore from './src/redux/configureStore';
 
-const store = configureStore()
+import store from './src/redux/configureStore'
 
 const RNRedux = (props) => {
 
